@@ -8,7 +8,8 @@ import plotly.express as px
 st.title('Grocery Store Sales data')
 
 #Importing the data set: sales of a multinational grovery store
-df_sales = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/supermarket_sales.csv")
+#df_sales = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/supermarket_sales.csv")
+df_sales = pd.read.csv('data/supermarket_sales.csv')
 st.subheader('Display of the Dataset:')
 st.dataframe(df_sales)
 
@@ -206,7 +207,8 @@ st.plotly_chart(fig_grossIncomeperCategory)
 st.title('World Economic Forum Data')
 
 st.subheader('Display of the Dataset:')
-df_economicData = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/PopulationDataWorldBank.csv")
+#df_economicData = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/PopulationDataWorldBank.csv")
+df_economicData = pd.read.csv('data/PopulationDataWorldBank.csv')
 st.dataframe(df_economicData)
 
 #Creating a data frame with the countries and their GDPs:
