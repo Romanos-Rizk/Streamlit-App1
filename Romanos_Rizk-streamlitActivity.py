@@ -9,7 +9,8 @@ st.title('Grocery Store Sales data')
 
 #Importing the data set: sales of a multinational grovery store
 #df_sales = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/supermarket_sales.csv")
-df_sales = pd.read_csv('data/supermarket_sales.csv')
+data_url1 = "https://raw.githubusercontent.com/Romanos-Rizk/Streamlit-App1/main/supermarket_sales.csv"
+df_sales = pd.read_csv(data_url1)
 st.subheader('Display of the Dataset:')
 st.dataframe(df_sales)
 
@@ -208,7 +209,8 @@ st.title('World Economic Forum Data')
 
 st.subheader('Display of the Dataset:')
 #df_economicData = pd.read_csv("C:/Users/Lenovo/OneDrive/01_Education/02_AUB/01_Fall2023/MSBA325-Data Visualization and Communication/Projects/DataSets/PopulationDataWorldBank.csv")
-df_economicData = pd.read_csv('data/PopulationDataWorldBank.csv')
+data_url2 = "https://raw.githubusercontent.com/Romanos-Rizk/Streamlit-App1/main/PopulationDataWorldBank.csv"
+df_economicData = pd.read_csv(data_url2)
 st.dataframe(df_economicData)
 
 #Creating a data frame with the countries and their GDPs:
