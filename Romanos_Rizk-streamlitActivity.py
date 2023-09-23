@@ -280,7 +280,6 @@ df_filteredByYear = df_GDPcomparison[(df_GDPcomparison['Date'] >= year_range[0])
 
 # #Creating a line plot that would display the GDP of China and the US for the period of 1970 to 2019
 fig_GDPcomparison = px.line(df_filteredByYear, x=x_label2, y=y_label2,
-              title=title_filter2,
               labels={'x':'Date', 'y':'GDP in Dollar'})
 
 fig_GDPcomparison.update_layout(xaxis=dict(linewidth=2, ticks='outside', tickfont=dict(family='Arial', size=12, color='rgb(82,82,82)',),)
@@ -288,7 +287,7 @@ fig_GDPcomparison.update_layout(xaxis=dict(linewidth=2, ticks='outside', tickfon
 
 #fig_GDPcomparison.update_traces(textposition='outside')
 fig_GDPcomparison.update_layout(uniformtext_minsize=8, title_x=0.5,
-                                     title={'text':title_filter,
+                                     title={'text':title_filter2,
                                          'x': 0.5,
                                          'xanchor': 'center'},
                                          bargap=1, bargroupgap=1)
