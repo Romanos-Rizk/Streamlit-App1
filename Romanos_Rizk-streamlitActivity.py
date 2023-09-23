@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-# Setting a title for the project
+# Setting titles for the project
+st.title('Romanos Rizk: Streamlit App')
 st.title('Grocery Store Sales data')
 
 #Importing the data set: sales of a multinational grovery store
